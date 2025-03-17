@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 84% 5%;
+    --foreground: 0 0% 100%;
+
+    --card: 210 84% 5%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 210 84% 5%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 0 0% 100%;
+    --primary-foreground: 210 84% 5%;
+
+    --secondary: 210 70% 10%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 70% 10%;
+    --muted-foreground: 210 20% 80%;
+
+    --accent: 210 70% 10%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 70% 10%;
+    --input: 210 70% 10%;
+    --ring: 210 70% 50%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 210 84% 5%;
+    --foreground: 0 0% 100%;
+
+    --card: 210 84% 5%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 210 84% 5%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 0 0% 100%;
+    --primary-foreground: 210 84% 5%;
+
+    --secondary: 210 70% 10%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 70% 10%;
+    --muted-foreground: 210 20% 80%;
+
+    --accent: 210 70% 10%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 70% 10%;
+    --input: 210 70% 10%;
+    --ring: 210 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom scrollbar for the portfolio */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(10, 22, 34, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 136, 255, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 136, 255, 0.8);
+}
+
+/* Snap scrolling */
+.snap-y {
+  scroll-snap-type: y mandatory;
+}
+
+.snap-start {
+  scroll-snap-align: start;
+}
+
